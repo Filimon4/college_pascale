@@ -32,6 +32,11 @@ begin
     else
       res := -tg(abs(x)) / Power(abs(x), 1/3);
   end
+  else if (x <= 2) then
+  begin
+    res:= ln(100)/ln(x);
+    writeln('Значение равно: ', res);
+  end
   else
     writeln('Значение не подходит');
 end;
